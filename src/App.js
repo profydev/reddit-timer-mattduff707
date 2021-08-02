@@ -1,11 +1,13 @@
 // eslint-disable-next-line quotes
 import React from 'react';
+import { normalize } from 'styled-normalize';
 import { BrowserRouter as Router } from 'react-router-dom';
 import styled, { createGlobalStyle } from 'styled-components';
 import Header from './layout/Header';
 import Main from './layout/Main';
 
 const GlobalStyle = createGlobalStyle`
+${normalize}
 html {
 --font-family-primary: 'Bitter', serif;
 --font-family-secondary: 'Montserrat', sans-serif;
